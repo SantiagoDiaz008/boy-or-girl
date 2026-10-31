@@ -106,7 +106,7 @@ body {
 .text-block { font-family: var(--font-serif); font-weight: 500; font-size: 3.7cqw; line-height: 1.3; margin-top: 1.4cqw; color: var(--ink); max-width: 72cqw; }
 .dress { font-family: var(--font-caps); font-weight: 400; font-size: 3.5cqw; letter-spacing: .3cqw; text-transform: uppercase; margin-top: 2cqw; }
 .pair { display: flex; align-items: center; gap: 4cqw; margin-top: 4cqw; }
-.pair .o { font-family: var(--font-serif); font-size: 4.5cqw; color: var(--ink); }
+.pair .o { font-family: var(--font-serif); font-weight: 600; font-size: 4.6cqw; color: var(--ink); }
 .pair svg { width: 11cqw; height: auto; overflow: visible; }
 .bye { font-family: var(--font-serif); font-weight: 600; font-size: 3.8cqw; margin-top: 3.4cqw; color: var(--ink); letter-spacing: .1cqw; }
 
@@ -302,13 +302,13 @@ details.panel[open] summary { margin-bottom: 14px; }
     </div>
     <div class="time" id="o-time">5:30 PM</div>
     <div class="label">Dirección :</div>
-    <div class="text-block" id="o-place">Casa de mis abuelitas Fonseca Castro, Ranchito de Castro, Guasave, Sin.</div>
+    <div class="text-block" id="o-place">Salón Victoria</div>
     <div class="label">Dress code:</div>
     <div class="dress" id="o-dress">Blanco</div>
-    <div class="pair" aria-hidden="true">
-      <svg viewBox="0 0 60 56"><rect class="sk" x="8" y="22" width="44" height="30" rx="2"/><rect class="sk" x="4" y="14" width="52" height="11" rx="2"/><path class="sk sk-open" d="M30 14 V52 M30 14 C20 2 12 8 20 14 M30 14 C40 2 48 8 40 14"/></svg>
-      <span class="o">O</span>
-      <svg viewBox="0 0 60 56"><rect class="sk" x="4" y="10" width="52" height="38" rx="2"/><path class="sk sk-open" d="M4 12 L30 34 L56 12 M4 46 L24 28 M56 46 L36 28"/></svg>
+    <div class="pair">
+      <svg viewBox="0 0 60 56" aria-hidden="true" style="transform:rotate(-12deg)"><rect class="sk" x="4" y="10" width="52" height="38" rx="2"/><path class="sk sk-open" d="M4 12 L30 34 L56 12 M4 46 L24 28 M56 46 L36 28"/></svg>
+      <span class="o" id="o-gift">Lluvia de sobres</span>
+      <svg viewBox="0 0 60 56" aria-hidden="true" style="transform:rotate(12deg)"><rect class="sk" x="4" y="10" width="52" height="38" rx="2"/><path class="sk sk-open" d="M4 12 L30 34 L56 12 M4 46 L24 28 M56 46 L36 28"/></svg>
     </div>
     <div class="bye">¡¡TE ESPERAMOS !!</div>
   </div>
@@ -366,7 +366,7 @@ details.panel[open] summary { margin-bottom: 14px; }
     <div class="wide"><label for="i-quote">Frase</label><textarea id="i-quote">Un nuevo amor viene en camino y queremos descubrir su nombre junto a ti.</textarea></div>
     <div><label for="i-date">Fecha</label><input id="i-date" type="date" value="2026-12-05"></div>
     <div><label for="i-time">Hora</label><input id="i-time" type="time" value="19:00"></div>
-    <div class="wide"><label for="i-place">Dirección</label><textarea id="i-place">Casa de mis abuelitas Fonseca Castro, Ranchito de Castro, Guasave, Sin.</textarea></div>
+    <div class="wide"><label for="i-place">Dirección</label><textarea id="i-place">Salón Victoria</textarea></div>
     <div class="wide"><label for="i-dress">Dress code</label><input id="i-dress" value="Blanco" autocomplete="off"></div>
   </div>
 </details>
